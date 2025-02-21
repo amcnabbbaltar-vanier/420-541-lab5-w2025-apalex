@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Add this namespace
 
@@ -37,3 +39,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("VictoryScene"); // Use your new scene's name
     }
 }
+

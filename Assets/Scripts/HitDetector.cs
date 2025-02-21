@@ -1,5 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
 
 public class HitDetector : MonoBehaviour
 {
@@ -7,8 +8,8 @@ public class HitDetector : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            EnemyController enemyController =  other.GetComponent<EnemyController>();
-            if (enemyController  != null)
+            EnemyController enemyController = other.GetComponent<EnemyController>();
+            if (enemyController != null)
             {
                 enemyController.GotHit();
             }
