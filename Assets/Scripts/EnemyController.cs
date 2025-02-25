@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -18,6 +19,7 @@ public class EnemyController : MonoBehaviour
     public void GotHit()
     {
         animator.SetTrigger("GotHit");
+        Console.WriteLine("GOTHITT");
         hitParticles.Play();
         audioSource.Play();
         GameManager.Instance.IncrementScore();

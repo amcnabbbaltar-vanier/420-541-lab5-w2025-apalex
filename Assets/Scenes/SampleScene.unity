@@ -332,11 +332,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!136 &245324551 stripped
-CapsuleCollider:
-  m_CorrespondingSourceObject: {fileID: 3981279478055205610, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
-  m_PrefabInstance: {fileID: 1701101259}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &288507083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799155194134901007, guid: a28bf3c0516192a4299ae8aab5910ed0, type: 3}
@@ -5292,6 +5287,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &606418161 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 3981279478055205610, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+  m_PrefabInstance: {fileID: 1701101259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &625450513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799155194134901007, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
@@ -5430,7 +5430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackColliders:
-  - {fileID: 245324551}
+  - {fileID: 606418161}
   - {fileID: 766969783}
 --- !u!1 &705507993
 GameObject:
@@ -6040,6 +6040,18 @@ PrefabInstance:
       propertyPath: m_Height
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3981279478055205610, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981279478055205610, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981279478055205610, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6129578367967161269, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3181158
@@ -6095,6 +6107,14 @@ PrefabInstance:
     - target: {fileID: 6799155194134901007, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259242816638838863, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259242816638838863, guid: ebd56db7ac3152d4fa127040873dcd9b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

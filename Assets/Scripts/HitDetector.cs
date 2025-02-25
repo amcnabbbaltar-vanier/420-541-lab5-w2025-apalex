@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class HitDetector : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class HitDetector : MonoBehaviour
             EnemyController enemyController = other.GetComponent<EnemyController>();
             if (enemyController != null)
             {
+                Console.WriteLine(gameObject);
                 enemyController.GotHit();
             }
         }
